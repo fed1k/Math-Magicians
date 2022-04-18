@@ -13,6 +13,8 @@ To clone the repo:
 
 $ git clone git@github.com:fed1k/Math-Magicians.git
 
+$ cd Math-Magicians
+
 
 To build the project run:
 
