@@ -9,10 +9,15 @@ This is a calculator application. The user can do some calculations on this appl
 [Live demo deployed on Netlify](https://mymath-magicians.netlify.app/)
 
 ## Usage
+To clone the repo:
+
+$ git clone git@github.com:fed1k/Math-Magicians.git
+
 
 To build the project run:
 
 $ npm install
+
 $ npm run build
 
 ## Development
