@@ -6,7 +6,7 @@ This is a calculator application. The user can do some calculations on this appl
  * Redux
 
 ## Live 
-[Live demo deployed on Netlify]()
+[Live demo deployed on Netlify](https://mymath-magicians.netlify.app/)
 
 ## Usage
 
