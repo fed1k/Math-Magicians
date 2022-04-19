@@ -1,4 +1,5 @@
 import './index.css';
+import React from 'react';
 import Design from './components/Calculator';
 
 function App() {
