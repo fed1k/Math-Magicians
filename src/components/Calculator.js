@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 let count = 1;
 class Design extends React.Component {
@@ -14,7 +14,7 @@ class Design extends React.Component {
       <div className="main-container">
         <div className="console">0</div>
         {this.state.data.map((i) => (
-          <span className={this.state.classname + count++}>{i}</span>
+          <span className={this.state.classname + (count += 1)} key={count += 1}>{i}</span>
         ))}
       </div>
     );
