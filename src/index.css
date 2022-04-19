@@ -51,3 +51,9 @@ span {
 .a38 {
   background-color: #f5913e;
 }
+
+@media (max-width: 550px) {
+  .main-container {
+    width: 80%;
+  }
+}
