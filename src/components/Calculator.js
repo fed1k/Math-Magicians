@@ -9,14 +9,15 @@ class Design extends React.Component {
       classname: 'a',
     };
   }
+
   render() {
     const el = this.state;
     return (
       <div className="main-container">
         <div className="console">0</div>
-        {el.data.map((i) => (
+        {el.data.map((i) => {return(
           <span className={el.classname + (count += 1)} key={count += 1}>{i}</span>
-        ))}
+        )})}
       </div>
     );
   }
