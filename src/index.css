@@ -40,14 +40,14 @@ span {
   font-weight: bold;
 }
 
-#a17 {
+.a17 {
   grid-column: 2 span;
 }
 
-#a4,
-#a8,
-#a12,
-#a16,
-#a19 {
+.a4,
+.a8,
+.a12,
+.a16,
+.a19 {
   background-color: #f5913e;
 }
