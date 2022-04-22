@@ -17,7 +17,7 @@ export default function calculate(obj, buttonName) {
   if (buttonName === 'AC') {
     return {
       total: null,
-      next: null,
+      next: '0',
       operation: null,
     };
   }
@@ -114,7 +114,7 @@ export default function calculate(obj, buttonName) {
       total: operate(obj.total, obj.next, obj.operation),
       next: null,
       operation: buttonName,
-    };
+    }; 
   }
 
   // no operation yet, but the user typed one

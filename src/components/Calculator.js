@@ -1,28 +1,41 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import calculate from '../logic/calculate';
 
 let count = 1;
 class Design extends React.Component {
   constructor(props) {
     super(props);
-    this.data = ['AC', '+/-', '%', '/', 7, 8, 9, 'x', 4, 5, 6, '-', 1, 2, 3, '+', 0, '.', '='],
     this.state = {
-      presenter: 0,
-    };
-  }
-  handler(e){
-    this.setState({presenter: e})
+      total: '',
+      operation: '',
+      next: '0'
+    }
   }
 
   render() {
+    const { data } = this.props;
+    // const { newState } = this.props;
+    // const { obj } = this.props;
     return (
       <div className="main-container">
-        <div className="console">{this.state.presenter}</div>
-        {this.data.map((i) => {
-          return <button key={(count += 1)}>{i}</button>
+        <div className="console">{this.state.total}{this.state.operation}{this.state.next}</div>
+        {data.map((i) => {
+          return <button onClick={()=>
+            this.setState(state=>(
+              calculate(state, i)
+            ))} key={(count += 1)}>{i}</button>
         })}
       </div>
     );
   }
 }
+
+Design.propTypes = {
+  data: PropTypes.string.isRequired,
+  initialState: PropTypes.string.isRequired,
+  newState: PropTypes.func.isRequired,
+  obj: PropTypes.string.isRequired
+};
 
 export default Design;
