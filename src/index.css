@@ -48,8 +48,7 @@ button:nth-child(5),
 button:nth-child(9),
 button:nth-child(13),
 button:nth-child(17),
-button:nth-child(20)
- {
+button:nth-child(20) {
   background-color: #f5913e;
 }
 
