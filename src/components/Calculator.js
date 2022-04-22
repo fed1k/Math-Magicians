@@ -1,32 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import calculate from '../logic/calculate';
 
 let count = 1;
-class Design extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: '',
-      operation: '',
-      next: '0'
-    }
-  }
-
-  render() {
-    const { data } = this.props;
-    return (
-      <div className="main-container">
-        <div className="console">{this.state.total}{this.state.operation}{this.state.next}</div>
-        {data.map((i) => {
-          return <button onClick={()=>
-            this.setState(state=>(
-              calculate(state, i)
-            ))} key={(count += 1)}>{i}</button>
-        })}
-      </div>
-    );
-  }
+const Design = (props) => {
+  const [state, setState] = useState(props.obj);
+  return (
+    <div className="main-container">
+      <div className="console">{state.total}{state.operation}{state.next}</div>
+      {props.data.map((i) => {
+        return <button onClick={()=>
+          setState(calculate(state, i))} key={(count += 1)}>{i}</button>
+      })}
+    </div>
+  );
 }
 
 Design.propTypes = {
