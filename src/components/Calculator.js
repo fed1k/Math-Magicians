@@ -15,8 +15,6 @@ class Design extends React.Component {
 
   render() {
     const { data } = this.props;
-    // const { newState } = this.props;
-    // const { obj } = this.props;
     return (
       <div className="main-container">
         <div className="console">{this.state.total}{this.state.operation}{this.state.next}</div>
