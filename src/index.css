@@ -5,10 +5,77 @@
 
 .App-header {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 100vh;
   background-color: #252526;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  color: rgba(224, 224, 224);
+  transition: all 1.5s ease;
+}
+
+.icon {
+  font-size: 50px;
+}
+
+.icon:hover {
+  background-color: rgba(0, 0, 0, 10%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.header-text {
+  font-size: 46px;
+  font-family: 'Inconsolata', serif;
+  color: rgba(224, 224, 224);
+}
+
+.nav-list-container {
+  display: flex;
+  gap: 40px;
+}
+
+.welcome-paragraph {
+  font-size: 24px;
+  font-family: 'Inconsolata', serif;
+  color: rgba(224, 224, 224);
+  line-height: 30px;
+}
+
+.home-link-div {
+  background-color: #252526;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.quote-page-div {
+  color: rgba(224, 224, 224);
+  font-size: 24px;
+  font-family: 'Inconsolata', serif;
+  line-height: 30px;
+  padding: 0 25px;
+}
+
+.p {
+  width: 60%;
+}
+
+.nav-list {
+  list-style: none;
+  font-size: 24px;
+  font-family: 'Inconsolata', serif;
+  align-self: center;
+  color: rgba(224, 224, 224);
+  text-decoration: none;
 }
 
 .main-container {
