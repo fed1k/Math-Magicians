@@ -5,10 +5,47 @@
 
 .App-header {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 100vh;
   background-color: #252526;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  color: rgba(224, 224, 224);
+  transition: all 1.5s ease;
+}
+
+.icon {
+  font-size: 50px;
+}
+
+.icon:hover {
+  background-color: rgba(0, 0, 0, 10%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.header-text {
+  font-size: 46px;
+  font-family: 'Inconsolata';
+}
+
+.nav-list-container {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-list {
+  list-style: none;
+  font-size: 24px;
+  font-family: 'Inconsolata';
+  align-self: center;
 }
 
 .main-container {
