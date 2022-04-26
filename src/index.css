@@ -34,6 +34,7 @@
 .header-text {
   font-size: 46px;
   font-family: 'Inconsolata';
+  color: rgba(224, 224, 224);
 }
 
 .nav-list-container {
@@ -41,11 +42,40 @@
   gap: 40px;
 }
 
+.welcome-paragraph {
+  font-size: 24px;
+  font-family: 'Inconsolata';
+  color: rgba(224, 224, 224);
+  line-height: 30px;
+}
+
+.home-link-div {
+  background-color: #252526;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.quote-page-div {
+  color: rgba(224, 224, 224);
+  font-size: 24px;
+  font-family: 'Inconsolata';
+  line-height: 30px;
+  padding: 0 25px;
+}
+
+.p {
+  width: 60%;
+}
+
 .nav-list {
   list-style: none;
   font-size: 24px;
   font-family: 'Inconsolata';
   align-self: center;
+  color: rgba(224, 224, 224);
+  text-decoration: none;
 }
 
 .main-container {
