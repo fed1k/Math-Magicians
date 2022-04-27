@@ -1,6 +1,16 @@
-// import calculate from "./calculate.js";
-import isNumber from './calculate.js';
+import calculate from "./calculate";
 
-test('should be number', ()=>{
-    expect(isNumber('5')).toMatch(/[0-9]/gi)
-})
+it("should return object and button name", () => {
+  const object = {
+    total: "",
+    operation: "",
+    next: "0",
+  };
+
+  const obj = {
+    total: null,
+    next: "0",
+    operation: null,
+  };
+  expect(calculate(object, "AC")).toStrictEqual(obj);
+});
