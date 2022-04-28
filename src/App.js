@@ -19,8 +19,8 @@ function App() {
       <header className="App-header">
         <Navbar />
         <Routes>
-          <Route exact path="/design" element={<Design data={buttonNames} obj={data} />} />
           <Route path="/" element={<Home />} />
+          <Route path="/design" element={<Design data={buttonNames} obj={data} />} />
           <Route path="/quote" element={<Quote />} />
         </Routes>
       </header>
