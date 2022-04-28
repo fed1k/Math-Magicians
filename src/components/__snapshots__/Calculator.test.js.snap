@@ -1,11 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render correctly 1`] = `
+exports[`should show clicked number on the console and work as expected should render correctly 1`] = `
 <div
   className="main-container"
 >
   <div
     className="console"
+    title="board"
   >
     0
   </div>

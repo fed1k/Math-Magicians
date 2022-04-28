@@ -9,9 +9,9 @@ import Quote from './components/Quote';
 function App() {
   const buttonNames = ['AC', '+/-', '%', '÷', '7', '8', '9', 'x', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
   const data = {
-    total: '',
+    total: '0',
     operation: '',
-    next: '0',
+    next: '',
   };
 
   return (

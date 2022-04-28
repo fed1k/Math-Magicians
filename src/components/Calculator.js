@@ -11,7 +11,7 @@ const Design = ({ data, obj }) => {
   };
   return (
     <div className="main-container">
-      <div className="console">
+      <div className="console" title="board">
         {state.total}
         {state.operation}
         {state.next}
