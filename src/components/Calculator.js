@@ -1,26 +1,29 @@
-import React, {useState} from 'react';
-import PropTypes from 'prop-types';
+import React, { useState } from 'react';
+import PropTypes, { string } from 'prop-types';
 import calculate from '../logic/calculate';
 
 let count = 1;
-const Design = (props) => {
-  const [state, setState] = useState(props.obj);
+const Design = ({ data, obj }) => {
+  const [state, setState] = useState(obj);
+  const regular = (a) => {
+    const kilo = <button type="button" onClick={() => setState(calculate(state, a))} key={(count += 1)}>{a}</button>;
+    return kilo;
+  };
   return (
     <div className="main-container">
-      <div className="console">{state.total}{state.operation}{state.next}</div>
-      {props.data.map((i) => {
-        return <button onClick={()=>
-          setState(calculate(state, i))} key={(count += 1)}>{i}</button>
-      })}
+      <div className="console">
+        {state.total}
+        {state.operation}
+        {state.next}
+      </div>
+      {data.map((i) => regular(i))}
     </div>
   );
-}
+};
 
 Design.propTypes = {
-  data: PropTypes.string.isRequired,
-  initialState: PropTypes.string.isRequired,
-  newState: PropTypes.func.isRequired,
-  obj: PropTypes.string.isRequired
+  data: PropTypes.arrayOf(string).isRequired,
+  obj: PropTypes.string.isRequired,
 };
 
 export default Design;
