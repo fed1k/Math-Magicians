@@ -6,8 +6,8 @@ This is a calculator application. The user can do some calculations on this appl
  * Redux
 
 ## Live 
-[Live demo deployed on Netlify](https://mymath-magicians.netlify.app/)
-[Live demo deployed on Heroku](https://myoldbookstore.herokuapp.com/)
+* [Live demo deployed on Netlify](https://mymath-magicians.netlify.app/)
+* [Live demo deployed on Heroku](https://myoldbookstore.herokuapp.com/)
 
 ## Usage
 To clone the repo:
